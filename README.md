@@ -106,11 +106,11 @@ chmod +x ./run.sh
 An execution will output to the console the followings:
 
 **Summary**  
-![Summary](./images/summary.png)
+![Summary](./images/summary.png)  
 presents the results of running a MAPF-IM algorithm
 
 **Visualize Path**  
-![Visualize Path](./images/visualize.png)
+![Visualize Path](./images/visualize.png)  
 shows a visual representation of the path taken by an Agent in an environment.
 The grid visualizes a pathfinding scenario with different types of terrain represented by specific characters. Here's what each character means:
 - **`.` (empty)**: An open and traversable location where the agent can move freely.
@@ -122,5 +122,5 @@ The grid visualizes a pathfinding scenario with different types of terrain repre
 This grid represents the environment in which the agent navigates from its start position (`S`) to its goal (`G`), while dealing with assumptions about certain areas that might turn out to be incorrect.
 
 **Visualize Path**  
-![Print Path](./images/path.png)
+![Print Path](./images/path.png)  
 lists the sequence of coordinates that Agent 1 follows from its start position to its goal in the grid environment. Each line represents a step the agent takes, showing the exact coordinates it visits in order.

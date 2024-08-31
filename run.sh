@@ -41,8 +41,8 @@ usage() {
 }
 
 # Set default values
-map_file_path="room-64-64-8.map"
-scenario_file_path="room-64-64-8-random-1.scen"
+map_file_path="maze-32-32-2.map"
+scenario_file_path="maze-32-32-2-random-1.scen"
 output_directory_path="mapf-im-output"
 number_of_agents=10
 framework_name="full_id_planner"

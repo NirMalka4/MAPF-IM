@@ -1,0 +1,8 @@
+# Ignore the .cache directory
+.cache/
+
+# Ignore the .build directory
+.build/
+
+# Ignore the build_output.log file
+build_output.log

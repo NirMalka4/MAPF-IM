@@ -101,3 +101,22 @@ chmod +x ./run.sh
 ```bash
 ./script_name.sh -m "custom_map.map" -s "custom_scenario.scen" -o "output_dir" -k 20 -f "full_id_planner" -hl "cbs" -ll "sipp" -p "risk_averse" -t 500 -vp 0 -pp 1
 ```
+
+## Outputs
+An execution will output to the console the followings:
+![Summary](./images/summary.png)
+presents the results of running a MAPF-IM algorithm
+
+![Visualize Path](./images/visualize.png)
+shows a visual representation of the path taken by an Agent in an environment.
+The grid visualizes a pathfinding scenario with different types of terrain represented by specific characters. Here's what each character means:
+- **`.` (empty)**: An open and traversable location where the agent can move freely.
+- **`S` (agent)**: The starting position of the agent.
+- **`G` (goal)**: The goal position that the agent is trying to reach.
+- **`?` (maybe_blocked)**: The agent initially thinks this spot is blocked and can't be reached, but it turns out to be open and traversable.
+- **`!` (maybe_open)**: The agent initially thinks this spot is open and can be traversed, but it turns out to be blocked and untraversable.
+- **`@` (wall)**: A solid obstacle that the agent cannot pass through.
+This grid represents the environment in which the agent navigates from its start position (`S`) to its goal (`G`), while dealing with assumptions about certain areas that might turn out to be incorrect.
+
+![Print Path](./images/path.png)
+lists the sequence of coordinates that Agent 1 follows from its start position to its goal in the grid environment. Each line represents a step the agent takes, showing the exact coordinates it visits in order.

@@ -15,7 +15,7 @@ The content related to the MAPF-IM algorithms is organized into the following fo
 
 - **[lib-src](./lib-src/):** Contains the source code for MAPF-IM, including the frameworks, high/low level planners, and policies proposed in the paper.
 
-- **[mapf-im-output](./mapf-im-output/):** Holds log files from the MAPF-IM algorithm executions, detailing the actions of each agent at each timestep.
+- **[mapf-im-output](./mapf-im-output/):** Holds log files from the MAPF-IM algorithm executions, detailing the actions of each agent at each timestep. The folder already contains an examples for a log files.
 
 
 ## Getting started

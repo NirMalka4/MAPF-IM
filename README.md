@@ -5,7 +5,7 @@ The proposed algorithm were presented at IROS-24 conference and has many practic
 
 ## Content
 
-This repository includes a script that helps manage the execution of the MAPF-IM library and executable. The script takes care of finding necessary files, building the executable if needed, and running it with the specified settings.
+This repository includes a script (**[run.sh](./run.sh/):**) that helps manage the execution of the MAPF-IM library and executable. The script takes care of finding necessary files, building the executable ((**[build.sh](./build.sh/):**)) if needed, and running it with the specified settings.
 
 The content related to the MAPF-IM algorithms is organized into the following folders:
 

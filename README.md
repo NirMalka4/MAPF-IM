@@ -18,6 +18,48 @@ The content related to the MAPF-IM algorithms is organized into the following fo
 - **[mapf-im-output](./mapf-im-output/):** Holds log files from the MAPF-IM algorithm executions, detailing the actions of each agent at each timestep.
 
 
+## Getting started
+
+### Prerequisites
+
+Before running this project, ensure that your development environment has the following prerequisites installed:
+
+1. **C++23 Support**
+   - Install GCC 12 or higher to ensure compatibility with C++23 features.
+
+2. **Boost Libraries**
+   - Ensure Boost libraries are installed (`libboost-all-dev`).
+
+3. **CMake 3.22 or Higher**
+   - Required for building the project.
+
+### Installation on Ubuntu
+
+You can use the following commands to install all the prerequisites on an Ubuntu machine:
+
+```bash
+# Update the package list
+sudo apt update
+
+# Install GCC 12 (which supports C++23) and necessary build tools
+sudo apt install -y gcc-12 g++-12 build-essential
+
+# Install Boost libraries
+sudo apt install -y libboost-all-dev
+
+# Install CMake 3.22
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt update
+sudo apt install -y cmake
+
+
+After installation, you may want to set GCC 12 as the default compiler:
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 60 --slave /usr/bin/g++ g++ /usr/bin/g++-12
+This will ensure that your environment is ready to build and run the project.
+
+
+
 ### Available Options
 
 - `-m, --map_file_path <map_file_path>`: Path to the map file (default: `room-64-64-8.map`). The script will search for this file in any subdirectory of the current working directory.
@@ -33,21 +75,8 @@ The content related to the MAPF-IM algorithms is organized into the following fo
 - `-pp, --print_path <print_path>`: Whether to print the vertex an agent traversed in each timestep (default: 1). Options: `1` (true), `0` (false).
 - `-h, --help`: Display help message and exit.
 
-## Usage example
+### Usage example
 
 ```bash
 ./script_name.sh -m "custom_map.map" -s "custom_scenario.scen" -o "output_dir" -k 20 -f "full_id_planner" -hl "cbs" -ll "sipp" -p "risk_averse" -t 500 -vp 0 -pp 1
-```
-
-### Build Process
-
-If the `MAPF-IM-EXE` executable is not found, the script will automatically attempt to build it by running `build.sh`. If the build process fails, the script will print detailed error messages to help you diagnose the issue.
-
-## Contributing
-
-Feel free to submit issues or pull requests if you have suggestions for improvements or find any bugs.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```

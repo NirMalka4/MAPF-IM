@@ -111,7 +111,7 @@ presents the results of running a MAPF-IM algorithm
 
 **Visualize Path**  
 ![Visualize Path](./images/visualize.png)  
-shows a visual representation of the path taken by an Agent in an environment.
+shows a visual representation of the path taken by an agent in an environment.
 The grid visualizes a pathfinding scenario with different types of terrain represented by specific characters. Here's what each character means:
 - **`.` (empty)**: An open and traversable location where the agent can move freely.
 - **`S` (agent)**: The starting position of the agent.
@@ -123,4 +123,4 @@ This grid represents the environment in which the agent navigates from its start
 
 **Visualize Path**  
 ![Print Path](./images/path.png)  
-lists the sequence of coordinates that Agent 1 follows from its start position to its goal in the grid environment. Each line represents a step the agent takes, showing the exact coordinates it visits in order.
+lists the sequence of coordinates that an agent follows from its start position to its goal in the grid environment. Each line represents a step the agent takes, showing the exact coordinates it visits in order.

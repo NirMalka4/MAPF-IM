@@ -67,9 +67,21 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 60 --slave /
 ```
 This will ensure that your environment is ready to build and run the project.
 
+### Installing
+Download current repository to your local machine:
+```bash
+git clone https://github.com/NirMalka4/MAPF-IM.git
+```
+
+From the cloned project directory, apply the run.sh script:
+```bash
+cd PATH_TO_CLONED_PROJECT
+chmod +x ./run.sh
+./run.sh
+```
 
 
-### Available Options
+## Script Available Options
 
 - `-m, --map_file_path <map_file_path>`: Path to the map file (default: `room-64-64-8.map`). The script will search for this file in any subdirectory of the current working directory.
 - `-s, --scenario_file_path <scenario_file_path>`: Path to the scenario file (default: `room-64-64-8-random-1.scen`). The script will search for this file in any subdirectory of the current working directory.

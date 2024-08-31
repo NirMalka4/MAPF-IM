@@ -1,14 +1,21 @@
-# MAPF-IM Execution Script
+# MAPF-IM: Online Planning for Multi Agent Path Finding in Inaccurate Maps
+In MAPF-IM the input graph may be inaccurate, containing non-existent edges or missing edges present in the environment. Agents can verify the existence or non-existence of an edge only by moving close to it. To navigate such maps, we propose an online approach where planning and execution are interleaved. As agents gather new information about the environment over time, they replan accordingly. 
+The proposed algorithm were presented at IROS-24 conference and has many practical applications, especially in the field of autonomous robotics.
 
-This repository contains a script designed to manage the execution of the MAPF-IM library and executable. The script handles various tasks, including locating necessary files, building the executable if it doesn't exist, and running the executable with specified parameters.
 
-## Features
+## Content
 
-- **Automatic File Search**: The script searches for required files such as the map file and scenario file within the current directory and its subdirectories.
-- **Automatic Directory Creation**: If the specified output directory doesn't exist, the script automatically creates it.
-- **Automatic Build Process**: If the `MAPF-IM-EXE` executable is not found, the script will attempt to build it using `build.sh`.
-- **Error Handling**: The script provides clear error messages if any step fails, including detailed output from the build process if it encounters an error.
-- **Customizable Execution**: The script allows users to specify parameters such as the number of agents, the framework name, and the policy name, with sensible default values provided.
+This repository includes a script that helps manage the execution of the MAPF-IM library and executable. The script takes care of finding necessary files, building the executable if needed, and running it with the specified settings.
+
+The content related to the MAPF-IM algorithms is organized into the following folders:
+
+- **[benchmarks](./benchmarks/):** Contains input files (maps and scenarios) required by the MAPF-IM algorithms. These files were used in the experiments described in the paper.
+  
+- **[exe-src](./exe-src/):** Includes the main source file used to run the MAPF-IM algorithms.
+
+- **[lib-src](./lib-src/):** Contains the source code for MAPF-IM, including the frameworks, high/low level planners, and policies proposed in the paper.
+
+- **[mapf-im-output](./mapf-im-output/):** Holds log files from the MAPF-IM algorithm executions, detailing the actions of each agent at each timestep.
 
 
 ### Available Options
